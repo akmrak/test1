@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mule-configuration xmlns="http://www.mulesoft.com/tooling/messageflow" name="remote_deploy_try1">
+    <flow SubFlow="false" name="remote_deploy_try1Flow1" type="http://www.mulesoft.org/schema/mule/core/flow" entity-id="0ed92428-e40d-40d5-bac5-eb2d44891ddc">
+        <lane hadOnlyOneElement="false" index="0" isChoiceOtherwiseLane="false" entity-id="b35c83f1-9be2-43f8-96cd-d8de4a9a62e1">
+            <graphicalData x="0" y="0" width="0" height="0"/>
+            <endpoint direction="Inbound" message-exchange-pattern="RequestResponse" name="HTTP" type="http://www.mulesoft.org/schema/mule/https/endpoint" entity-id="1e24df68-3d89-4ab5-9de4-15f1ae624f9f">
+                <graphicalData x="21" y="93" width="68" height="169"/>
+                <properties>
+                    <property name="exchange-pattern" value="request-response"/>
+                </properties>
+                <description></description>
+            </endpoint>
+            <pattern name="Echo" type="http://www.mulesoft.org/schema/mule/core/echo-component" entity-id="f79966f4-fb51-4278-88c9-78336cbf9ff5">
+                <graphicalData x="0" y="0" width="0" height="0"/>
+                <description></description>
+            </pattern>
+        </lane>
+    </flow>
+</mule-configuration>
